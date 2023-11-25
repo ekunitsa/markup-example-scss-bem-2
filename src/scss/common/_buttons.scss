@@ -1,0 +1,28 @@
+.btn {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    padding: 17px 30px;
+    text-decoration: none;
+    transition: $transition-global;
+
+    @include media-breakpoint-up(lg) {
+        padding: 17px 50px;
+    }
+
+    &.btn-primary {
+        background-color: $color-black;
+        border: 1px solid $color-black;
+        color: $color-white;
+        font-size: $fs-base;
+        font-weight: $fw-semi-bold;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+
+        &:hover,
+        &.active {
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }
+}

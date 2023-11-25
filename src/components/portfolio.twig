@@ -1,0 +1,86 @@
+{% set portfolio = [
+    {
+        "image": "portfolio-1",
+        "width": "1",
+        "height": "3",
+        "tag": "fashion"
+    }, {
+        "image": "portfolio-2",
+        "width": "1",
+        "height": "7",
+        "tag": "fashion"
+    }, {
+        "image": "portfolio-3",
+        "width": "1",
+        "height": "5",
+        "tag": "fashion"
+    }, {
+        "image": "portfolio-4",
+        "width": "1",
+        "height": "6",
+        "tag": "portrait"
+    }, {
+        "image": "portfolio-5",
+        "width": "1",
+        "height": "9",
+        "tag": "fashion"
+    }, {
+        "image": "portfolio-6",
+        "width": "1",
+        "height": "7",
+        "tag": "portrait"
+    }, {
+        "image": "portfolio-7",
+        "width": "1",
+        "height": "5",
+        "tag": "fashion"
+    }
+] %}
+
+{% set filters = [
+    {
+        "filter": "all",
+        "title": "All",
+        "isActive": true
+    }, {
+        "filter": "fashion",
+        "title": "Fashion",
+        "isActive": false
+    }, {
+        "filter": "portrait",
+        "title": "Portrait",
+        "isActive": false
+    }
+] %}
+
+<section class="section portfolio__section" data-target="portfolio">
+    <div class="container container--inner-paddings">
+        <div class="title">
+            <div class="title__main h2">Portfolio</div>
+        </div>
+
+        <div class="portfolio__filters">
+            {% for item in filters %}
+                <a href="javascript:" class="js-portfolio-filter portfolio__filter {{ item.isActive == true ? "active" : "" }}" data-tag="{{ item.filter }}">
+                    {{ item.title }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="js-thegrid portfolio__grid">
+            {% for item in portfolio %}
+                 <div class="js-thegrid-cell portfolio__cell" data-width="{{ item.width }}" data-height="{{ item.height }}" data-tag-target="{{ item.tag }}">
+                    {% include "./utils/picture.twig" with {
+                        "path": "./img/", "name": item.image, "format": "jpg", "alt": "Portfolio image", "class": "portfolio__image"
+                    } %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="portfolio__mobile-all">
+            <a href="#" class="btn btn-primary">View all works</a>
+        </div>
+    </div>
+</section>

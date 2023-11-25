@@ -1,0 +1,59 @@
+.header {
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+
+    &__main {
+        align-items: center;
+        display: flex;
+        height: 70px;
+        padding: 15px 0;
+        transition: $transition-global;
+        width: 100%;
+
+        &.sticky {
+            background-color: $color-white;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+            left: 0;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+    }
+
+    &__burger-button {
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+    &__logo-svg {
+        @include media-breakpoint-up(lg) {
+            height: 45px;
+            width: 200px;
+        }
+    }
+
+    &__burger-button-svg {
+        color: $color-black;
+        cursor: pointer;
+        transition: $transition-global;
+    }
+
+    &__line {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right {
+        align-items: center;
+        display: flex;
+        gap: 40px;
+
+        @include media-breakpoint-up(lg) {
+            gap: 90px;
+        }
+    }
+}

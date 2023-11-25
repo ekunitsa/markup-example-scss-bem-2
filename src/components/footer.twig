@@ -1,0 +1,55 @@
+<footer class="footer">
+    <div class="container container--inner-paddings">
+        <div class="footer__grid">
+            <div class="footer__item">
+                <div class="title">
+                    <div class="title__main footer__title h3">Get in touch</div>
+                </div>
+
+                <div class="footer__contacts">
+                    <div class="footer__email">
+                        <a href="mailto:contactinfo@alenamiller.com" class="footer__email-link">contactinfo@alenamiller.com</a>
+                    </div>
+
+                    <div class="footer__phone">
+                        <a href="tel:3552022340457" class="footer__phone-link">(355)-202-234-0457</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="title">
+                    <div class="title__main footer__title h3">Where’s My Office?</div>
+                </div>
+
+                <div class="footer__contacts">
+                    <div class="footer__adrs">
+                        2489 Locust Court, Los Angeles
+                    </div>
+
+                    <div class="footer__adrs">
+                        3927 Red Maple Drive, Los Angeles
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="title">
+                    <div class="title__main footer__title h3">My Social Links</div>
+                </div>
+
+                <div class="footer__contacts">
+                    {% include "social.twig" with {"footer": true} %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer__bottom">
+            <div class="footer__copy">
+                © 2021 Templates Jungle | All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer>

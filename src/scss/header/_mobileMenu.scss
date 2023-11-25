@@ -1,0 +1,62 @@
+.mobile-menu {
+    background-color: $color-white;
+    height: 100vh;
+    margin-right: -90%;
+    overflow: auto;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: $transition-global;
+    width: 90%;
+    z-index: 200;
+
+    @include media-breakpoint-up(md) {
+        margin-right: -400px;
+        width: 400px;
+    }
+
+    &.active {
+        margin-right: 0;
+    }
+
+    &__button-svg {
+        color: $color-black;
+        cursor: pointer;
+        transition: $transition-global;
+    }
+
+    &__header {
+        margin-bottom: 15px;
+        text-align: right;
+    }
+
+    &__close-svg {
+        background-color: $color-black;
+        border: 1px solid $color-black;
+        color: $color-white;
+        cursor: pointer;
+        height: 35px;
+        padding: 8px;
+        transition: $transition-global;
+        width: 35px;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }
+
+    &__link {
+        color: $color-black;
+        display: inline-block;
+        font-size: $fs-base;
+        font-weight: $fw-medium;
+        padding: 10px 0;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

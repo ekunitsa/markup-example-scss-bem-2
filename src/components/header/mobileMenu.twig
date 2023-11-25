@@ -1,0 +1,19 @@
+<div class="mobile-menu js-mobile-menu">
+    <div class="mobile-menu__header">
+        <div class="mobile-menu__close">
+            <svg width="24" height="21" focusable="false" class="mobile-menu__close-svg js-close-menu">
+                <use href="./img/sprite.svg#close"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div class="mobile-menu__container">
+        <ul class="mobile-menu__ul">
+            {% for item in menu %}
+                <li class="mobile-menu__li">
+                    <a href="{{ item.link }}" class="mobile-menu__link js-mobile-menu-link">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+// Colors
+$color-black:           #0e1112;
+$color-grey:            #484b4b;
+$color-light-blue:      #eef7f9;
+$color-light-grey:      #696c6d;
+$color-lightest-grey:   #8f9294;
+$color-white:           #fff;
+
+$color-transparent:     transparent;
+
+// Transition
+$transition-global: all, 0.2s;
+
+// Fonts
+$font-mulish:            'Mulish', Arial, sans-serif;
+$font-playfair-display:  'Playfair Display', Arial, sans-serif;
+
+// Font weights
+$fw-light:      300;
+$fw-regular:    normal;
+$fw-medium:     500;
+$fw-semi-bold:  600;
+$fw-bold:       700;
+$fw-extra-bold: 800;
+
+// Font sizes
+$fs-xl:             108px;
+$fs-large:          56px;
+$fs-large-small:    50px;
+$fs-medium:         36px;
+$fs-medium-small:   32px;
+$fs-medium-small-2: 24px;
+$fs-base:           16px;
+$fs-small:          14px;
+
+// Line-heights
+$lh-base:       2.15;
+$lh-small:      1.4;
+$lh-xs:         1.2;
+
+// Breakpoints
+$breakpoint-xs:  0;
+$breakpoint-sm:  576px;
+$breakpoint-md:  768px;
+$breakpoint-lg:  992px;
+$breakpoint-xl:  1200px;
+$breakpoint-xxl: 1400px;
+
+$grid-breakpoints: (
+    xs:   $breakpoint-xs,
+    sm:   $breakpoint-sm,
+    md:   $breakpoint-md,
+    lg:   $breakpoint-lg,
+    xl:   $breakpoint-xl,
+    xxl:  $breakpoint-xxl
+);
+
+// Container
+$container: 1550px; // -30px paddings
+$container-big: 1800px; // -30px paddings

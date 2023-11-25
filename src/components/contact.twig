@@ -1,0 +1,48 @@
+<section class="section section--blue contact__section" data-target="contact">
+    <div class="container">
+        <div class="contact__grid">
+            <div class="contact__text-side">
+                <div class="title">
+                    <div class="title__main h2">Contact me</div>
+                    <div class="title__description">I would love to get suggestions from you.</div>
+                </div>
+
+                <div class="contact__form">
+                    <form>
+                        <div class="contact__form-grid">
+                            <div class="contact__oneline">
+                                <div class="contact__input-wrapper">
+                                    <input type="text" class="contact__input" placeholder="Your name">
+                                </div>
+
+                                <div class="contact__input-wrapper">
+                                    <input type="email" class="contact__input" placeholder="Your e-mail">
+                                </div>
+                            </div>
+
+                            <div class="contact__oneline">
+                                <div class="contact__input-wrapper">
+                                    <input type="text" class="contact__input" placeholder="Your message">
+                                </div>
+                            </div>
+
+                            <div class="contact__oneline">
+                                <div class="contact__submit-wrapper">
+                                    <button type="submit" class="contact__submit btn btn-primary">
+                                        Send it
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact__image-side">
+                {% include "./utils/picture.twig" with {
+                    "path": "./img/", "name": "contact", "format": "png", "alt": "Contact", "class": "contact__image"
+                } %}
+            </div>
+        </div>
+    </div>
+</section>

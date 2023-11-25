@@ -1,0 +1,77 @@
+body {
+    font-family: $font-mulish;
+    font-size: $fs-base;
+}
+
+html {
+    &:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+img,
+picture {
+    display: inline;
+}
+
+a {
+    transition: $transition-global;
+}
+
+svg {
+    overflow: hidden;
+    transition: inherit;
+    vertical-align: middle;
+}
+
+b,
+strong {
+    font-weight: $fw-bold;
+}
+
+.shadow-backdrop {
+    background-color: $color-black;
+    display: none;
+    height: 100vh;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 150;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $container;
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+
+    &--big {
+        max-width: $container-big;
+    }
+
+    &--inner-paddings {
+        @include media-breakpoint-up(xl) {
+            padding-left: 175px;
+            padding-right: 175px;
+        }
+    }
+}
+
+.section {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 160px;
+        margin-top: 160px;
+    }
+
+    &--blue {
+        background-color: $color-light-blue;
+    }
+}

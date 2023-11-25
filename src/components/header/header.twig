@@ -1,0 +1,46 @@
+{% set menu = [
+    {
+        "title": "Home",
+        "link": "#home",
+    }, {
+        "title": "About Me",
+        "link": "#about",
+    }, {
+        "title": "Portfolio",
+        "link": "#portfolio",
+    }, {
+        "title": "Blog",
+        "link": "#blog",
+    }, {
+        "title": "Contact",
+        "link": "#contact",
+    }
+] %}
+
+<header class="header">
+    <div class="header__main js-header">
+        <div class="container container--big">
+            <div class="header__line">
+                <div class="header__logo">
+                    <svg width="100" height="22" focusable="false" class="header__logo-svg">
+                        <use href="./img/sprite.svg#logo"></use>
+                    </svg>
+                </div>
+
+                <div class="header__right">
+                    {% include "mainMenu.twig" with menu %}
+
+                    {% include "../social.twig" %}
+
+                    <div class="header__burger-button">
+                        <svg width="24" height="21" focusable="false" class="header__burger-button-svg js-burger">
+                            <use href="./img/sprite.svg#menu"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% include "mobileMenu.twig" with menu %}

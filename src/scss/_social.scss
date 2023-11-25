@@ -1,0 +1,40 @@
+.social {
+    &__list {
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    &__link {
+        color: $color-black;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &--footer {
+        .social {
+            &__list {
+                gap: 5px;
+                justify-content: flex-start;
+            }
+
+            &__link {
+                background-color: $color-white;
+                border-radius: 50%;
+                color: $color-grey;
+                display: inline-flex;
+                height: 38px;
+                padding: 11px;
+                width: 38px;
+
+                &:hover {
+                    background-color: $color-light-blue;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

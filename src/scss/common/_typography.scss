@@ -1,0 +1,86 @@
+h1,
+.h1 {
+    color: $color-black;
+    font-family: $font-playfair-display;
+    font-size: $fs-large-small;
+    font-weight: $fw-bold;
+    letter-spacing: -3px;
+    line-height: $lh-xs;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $fs-xl;
+        letter-spacing: -5.4px;
+    }
+}
+
+h2,
+.h2 {
+    color: $color-black;
+    font-family: $font-playfair-display;
+    font-size: $fs-medium;
+    font-weight: $fw-bold;
+    line-height: $lh-small;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $fs-large;
+    }
+}
+
+h3,
+.h3 {
+    color: $color-black;
+    font-family: $font-playfair-display;
+    font-size: $fs-medium-small-2;
+    font-weight: $fw-regular;
+    line-height: $lh-small;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $fs-medium-small;
+    }
+}
+
+h4,
+.h4 {
+    color: $color-black;
+    font-family: $font-playfair-display;
+    font-size: $fs-medium-small-2;
+    font-weight: $fw-regular;
+    line-height: $lh-small;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $fs-medium-small;
+    }
+}
+
+h5,
+.h5 {
+    color: $color-black;
+    font-family: $font-playfair-display;
+    font-size: $fs-medium-small-2;
+    font-weight: $fw-regular;
+    line-height: $lh-small;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $fs-medium-small;
+    }
+}
+
+p {
+    font-size: $fs-base;
+    line-height: $lh-base;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,19 @@
+@import 'scss-reset/reset.css';
+@import "../fonts/Mulish/stylesheet.css";
+@import "../fonts/PlayfairDisplay/stylesheet.css";
+
+// Abstract styles
+@import "abstract/all";
+
+// Common styles for different components
+@import 'common/all';
+
+// Components
+@import 'header/all';
+@import 'social';
+@import 'aboutUs';
+@import 'blog';
+@import 'contact';
+@import 'hero';
+@import 'portfolio';
+@import 'footer';

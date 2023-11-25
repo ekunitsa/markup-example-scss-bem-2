@@ -1,0 +1,23 @@
+.main-menu {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+        display: block;
+
+        &__ul {
+            display: flex;
+            gap: 40px;
+        }
+
+        &__link {
+            color: $color-light-grey;
+            font-size: $fs-base;
+            letter-spacing: 0.32px;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{% set blog = [
+    {
+        "date": "03.11.2023",
+        "category": "Trends",
+        "title": "Why the trend of minimalism?",
+        "link": "#",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipis elit. Mattis auctor in mauris elit lobortis. Attis auctor in mauris."
+    }, {
+        "date": "04.11.2023",
+        "category": "Trends",
+        "title": "Simple tips & tricks of photography",
+        "link": "#",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipis elit. Mattis auctor in mauris elit lobortis."
+    }, {
+        "date": "05.11.2023",
+        "category": "Collection",
+        "title": "World’s top photograph collections",
+        "link": "#",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipis elit. Mattis auctor in mauris elit lobortis. Attis auctor in mauris. Lorem ipsum dolor sit amet, consectetur adipis elit. Mattis auctor in mauris elit lobortis. Attis auctor in mauris."
+    }, {
+        "date": "06.11.2023",
+        "category": "Portraits",
+        "title": "How to get model look portraits",
+        "link": "#",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipis elit."
+    }
+] %}
+
+<section class="section blog__section" data-target="blog">
+    <div class="container container--inner-paddings">
+        <div class="title">
+            <div class="title__main h2">Blog</div>
+        </div>
+
+        <div class="blog__list">
+            {% for item in blog %}
+                <div class="blog__item">
+                    <div class="blog__meta">
+                        <div class="blog__date">{{ item.date }}</div>
+                        <div class="blog__category">{{ item.category }}</div>
+                    </div>
+                    <div class="blog__title">
+                        <a href="{{ item.link }}" class="blog__title-link h3">{{ item.title }}</a>
+                    </div>
+                    <div class="blog__text">
+                        {{ item.text }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="blog__all">
+            <a href="#" class="btn btn-primary">View all blogs</a>
+        </div>
+    </div>
+</section>

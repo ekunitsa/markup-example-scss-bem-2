@@ -1,0 +1,35 @@
+// <div class="title">
+//     <div class="title__main h2">Contact me</div>
+//     <div class="title__description">I would love to get suggestions from you.</div>
+// </div>
+
+.title {
+    &__main {
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 60px;
+        }
+
+        &::after {
+            background-color: $color-black;
+            bottom: 0;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 75px;
+        }
+    }
+
+    &__description {
+        color: $color-grey;
+        margin-top: -20px;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: -30px;
+        }
+    }
+}

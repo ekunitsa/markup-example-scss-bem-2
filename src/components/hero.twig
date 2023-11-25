@@ -1,0 +1,26 @@
+<section class="section hero__section" data-target="home">
+    <div class="container">
+        <div class="hero__grid">
+            <div class="hero__text-side">
+                <div class="hero__title h1">
+                    Photographer<br>& Film Maker
+                </div>
+
+                <div class="hero__description">
+                    Los Angeles, USA
+                </div>
+
+                <div class="hero__button">
+                    <a href="#" class="btn btn-primary">Hire me</a>
+                </div>
+            </div>
+
+            <div class="hero__image-side">
+                <img src="./img/hero-plug.png" alt="Photographer" class="hero__image-plug">
+                {% include "./utils/picture.twig" with {
+                    "path": "./img/", "name": "hero", "format": "jpg", "alt": "Photographer", "class": "hero__image"
+                } %}
+            </div>
+        </div>
+    </div>
+</section>

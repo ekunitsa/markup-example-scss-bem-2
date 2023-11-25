@@ -1,0 +1,35 @@
+{% set social = [
+    {
+        "label": "Facebook",
+        "link": "#",
+        "icon": "social-1",
+    }, {
+        "label": "Twitter",
+        "link": "#",
+        "icon": "social-2",
+    }, {
+        "label": "Pinterest",
+        "link": "#",
+        "icon": "social-3",
+    }, {
+        "label": "Instagram",
+        "link": "#",
+        "icon": "social-4",
+    }, {
+        "label": "Youtube",
+        "link": "#",
+        "icon": "social-5",
+    }
+] %}
+
+<div class="social {% if footer %}social--footer{% endif %}">
+    <div class="social__list">
+        {% for item in social %}
+            <a href="{{ item.link }}" target="_blank" class="social__link" aria-label="{{ item.label }}">
+                <svg width="16" height="16" focusable="false">
+                    <use href="./img/sprite.svg#{{ item.icon }}"></use>
+                </svg>
+            </a>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.about-us {
+    &__text-side {
+        margin-bottom: 60px;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+            order: 2;
+            width: 50%;
+        }
+    }
+
+    &__text {
+        color: $color-grey;
+        line-height: $lh-base;
+        margin-bottom: 40px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__text-block {
+        @include media-breakpoint-up(lg) {
+            max-width: 450px;
+        }
+    }
+
+    &__grid {
+        @include media-breakpoint-up(lg) {
+            align-items: center;
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+        }
+    }
+
+    &__image-side {
+        @include media-breakpoint-up(lg) {
+            order: 1;
+            width: 50%;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+}

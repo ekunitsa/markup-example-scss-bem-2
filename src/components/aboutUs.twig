@@ -1,0 +1,28 @@
+<section class="section about-us__section" data-target="about">
+    <div class="container">
+        <div class="about-us__grid">
+            <div class="about-us__text-side">
+                <div class="about-us__text-block">
+                    <div class="title">
+                        <div class="title__main h2">About me</div>
+                    </div>
+
+                    <div class="about-us__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus <b>scelerisque viverra</b> at id aenean scelerisque. Nec eget condimentum etiam leo.</p>
+                        <p>Morbi at eget fusce feugiat volutpat et volutpat malesuada. At suspendisse nisi, quam neque in leo sollicitudin.</p>
+                    </div>
+
+                    <div class="about-us__button">
+                        <a href="#" class="btn btn-primary">View my works</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us__image-side">
+                {% include "./utils/picture.twig" with {
+                    "path": "./img/", "name": "about", "format": "jpg", "alt": "About", "class": "about-us__image"
+                } %}
+            </div>
+        </div>
+    </div>
+</section>

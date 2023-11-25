@@ -1,0 +1,90 @@
+.hero {
+    &__section {
+        margin-top: 0;
+    }
+
+    &__grid {
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    &__text-side {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        padding-top: 150px;
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 0;
+            position: static;
+            white-space: nowrap;
+            width: 50%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-left: 160px;
+        }
+    }
+
+    &__image-side {
+        margin-left: -15px;
+        margin-right: -15px;
+        overflow: hidden;
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            margin-left: 0;
+            margin-right: 0;
+            width: 50%;
+        }
+
+        &::after {
+            background-color: $color-white;
+            content: "";
+            height: 100%;
+            left: 0;
+            margin-left: -15px;
+            margin-right: -15px;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            width: calc(100% + 30px);
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+    }
+
+    &__image {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    &__image-plug {
+        width: 100%;
+    }
+
+    &__description {
+        color: $color-black;
+        font-family: $font-playfair-display;
+        font-size: $fs-medium-small-2;
+        letter-spacing: -0.72px;
+        margin-bottom: 40px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: $fs-medium;
+            margin-bottom: 60px;
+        }
+    }
+}
