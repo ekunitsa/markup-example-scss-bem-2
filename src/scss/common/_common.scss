@@ -61,17 +61,21 @@ strong {
 }
 
 .section {
-    margin-bottom: 80px;
-    margin-top: 80px;
     position: relative;
     width: 100%;
 
-    @include media-breakpoint-up(lg) {
-        margin-bottom: 160px;
-        margin-top: 160px;
-    }
-
     &--blue {
         background-color: $color-light-blue;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 80px;
+
+    @include media-breakpoint-up(lg) {
+        gap: 160px;
     }
 }

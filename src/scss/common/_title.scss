@@ -16,7 +16,7 @@
         &::after {
             background-color: $color-black;
             bottom: 0;
-            content: "";
+            content: '';
             height: 1px;
             left: 0;
             position: absolute;
@@ -26,10 +26,5 @@
 
     &__description {
         color: $color-grey;
-        margin-top: -20px;
-
-        @include media-breakpoint-up(lg) {
-            margin-top: -30px;
-        }
     }
 }
