@@ -1,5 +1,8 @@
 # Markup example 2. Landing page.
 
+> [!NOTE]
+> LEGACY | This project was written many years ago and, at some point a refactoring was done. The commit history was overwritten at the time of refactoring :) Is here for history, hard to consider as a modern portfolio.
+
 TWIG | SCSS | BEM
 
 node.js version - 20.9.0
